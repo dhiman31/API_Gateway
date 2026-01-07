@@ -54,6 +54,10 @@ app.use(
     proxy
 );
 
+app.get('/home', (req, res) => {
+    return res.json({message: 'OK'});
+})
+
 // app.get('/api/v1/city');
 
 app.listen(PORT, () => {
